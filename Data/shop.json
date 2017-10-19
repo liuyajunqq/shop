@@ -1,0 +1,34 @@
+[
+  {
+    "img":"img/1.png",
+    "cont":"one",
+    "sort":"唯颂格子毛呢外套",
+    "price":555,
+    "check":false,
+    "num":1
+  },
+  {
+    "img":"img/6.png",
+    "cont":"two",
+    "sort":"密扇撞色贴布休闲裤",
+    "price":789,
+    "check":false,
+    "num":1
+  },
+  {
+    "img":"img/3.png",
+    "cont":"three",
+    "sort":"衣阁里拉 斗篷式毛呢外套",
+    "price":456,
+    "check":false,
+    "num":1
+  },
+  {
+    "img":"img/4.png",
+    "cont":"four",
+    "sort":"RIMLESS流苏长袖",
+    "price":123,
+    "check":false,
+    "num":1
+  }
+]

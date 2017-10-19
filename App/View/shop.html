@@ -1,0 +1,55 @@
+<!--header-->
+<div class="bar bar-header bar-balanced">
+    <h1 class="title">购物车</h1>
+</div>
+<!--section-->
+<ion-scroll zooming="true" direction="y">
+    <div class="content has-header ionic-pseudo">
+        <div class="list">
+            <div class="item item-checkbox every" ng-repeat="item in things" item="item" index="{{$index}}">
+                <label class="checkbox">
+                    <input type="checkbox" class="check" ng-click="checkFn($index)">
+                </label>
+                <a class="item item-thumbnail-left" href="#">
+                    <img ng-src="{{item.img}}">
+                    <h2>{{item.cont}}</h2>
+                    <p>{{item.sort}}</p>
+                    <p>{{item.price}}</p>
+                    <p><b class="subtrct" ng-click="countFn('-')">-</b><input type="text" class="quantity" value="{{item.num}}"><b class="add" ng-click="countFn('+')">+</b></p>
+                    <span class="delete" ng-click="deleteFn(index)">&times;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</ion-scroll>
+<!--footer-->
+<div class="total">
+    <label class="checkbox check">
+        <input type="checkbox" ng-class="{state:flag}" ng-click="checkAll()">
+    </label>
+    <button class="button button-light checkAll">全选</button>
+    <button class="button" id="sum">合计：￥<i>{{total}}</i></button>
+    <button class="button button-calm" id="closeBtn">结算(<b class="account">{{count}}</b>)</button>
+</div>
+<div class="tabs tabs-icon-top">
+    <a class="tab-item" href="#">
+        <i class="icon ion-home"></i>
+        首页
+    </a>
+    <a class="tab-item" href="#">
+        <i class="icon ion-star"></i>
+        微淘
+    </a>
+    <a class="tab-item" href="#">
+        <i class="icon ion-gear-a"></i>
+        设置
+    </a>
+    <a class="tab-item" href="#">
+        <i class="icon ion-gear-a"></i>
+        购物车
+    </a>
+    <a class="tab-item" href="#">
+        <i class="icon ion-gear-a"></i>
+        我的淘宝
+    </a>
+</div>
